@@ -21,7 +21,6 @@ except Exception:
 print('Bem-vindo a Biblioteca virtual')
 
 while True:
-    time.sleep(0.87)
     print('\nMenu:')
     print('1 - Cadastrar Livro')
     print('2 - Cadastrar Usuário')
@@ -88,3 +87,4 @@ while True:
         break
     else:
         print('Opção inválida.')
+    time.sleep(0.87)

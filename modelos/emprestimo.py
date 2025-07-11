@@ -52,26 +52,7 @@ class Emprestimo:
     @property
     def get_dias(self):
         return self.__prazo
-    # def salvar_emprestimos(lista_emprestimos, caminho_arquivo):
-    #     dados = [i.to_dict() for i in lista_emprestimos]
-    #     with open(caminho_arquivo, 'w', encoding='utf-8') as f:
-    #         json.dump(dados, f, ensure_ascii=False, indent=4)
-
-    # def carregar_emprestimos(caminho_arquivo):
-    #     emprestimos = []
-    #     try:
-    #         with open(caminho_arquivo, 'r', encoding='utf-8') as f:
-    #             lista = json.load(f)
-    #             for item in lista:
-    #                 i = Emprestimo(item['nome_leitor'], item['ISBN'], item['prazo'])
-    #                 i._Emprestimo__data_emprestimo = item['data_emprestimo']
-    #                 if item['devolvido']:
-    #                     i.__devolvido = True
-    #                 emprestimos.append(i)
-    #     except FileNotFoundError:
-    #         Execoes.FileDontFound()
-    #     return emprestimos
-
+    
 def salvar_emprestimos(lista_emprestimos, caminho_arquivo):
     dados = [i.to_dict() for i in lista_emprestimos]
     try:
